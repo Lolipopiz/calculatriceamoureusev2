@@ -113,7 +113,7 @@ namespace calculatriceamoureusev2 {
 			this->sonPrenom->Name = L"sonPrenom";
 			this->sonPrenom->Size = System::Drawing::Size(118, 16);
 			this->sonPrenom->TabIndex = 10;
-			this->sonPrenom->Text = L"Entrez son prénom";
+			this->sonPrenom->Text = L"Entrez son prenom";
 			// 
 			// tonPrenom
 			// 
@@ -123,7 +123,7 @@ namespace calculatriceamoureusev2 {
 			this->tonPrenom->Name = L"tonPrenom";
 			this->tonPrenom->Size = System::Drawing::Size(126, 16);
 			this->tonPrenom->TabIndex = 9;
-			this->tonPrenom->Text = L"Entrez votre prénom";
+			this->tonPrenom->Text = L"Entrez votre prenom";
 			// 
 			// coeur2
 			// 
@@ -275,7 +275,7 @@ namespace calculatriceamoureusev2 {
 		if (curseur_de_comptabilité->Value < targetValue)
 		{
 			curseur_de_comptabilité->Value += 1;
-			label1->Text = "Compatibilité : " + curseur_de_comptabilité->Value.ToString() + "%";
+			label1->Text = "Compatibilite : " + curseur_de_comptabilité->Value.ToString() + "%";
 		}
 		else
 		{
@@ -287,29 +287,30 @@ namespace calculatriceamoureusev2 {
 			switch (range) {
 			case 0: // entre 0 et 19%
 				this->richTextBox1->Text = "Ce n'est pas la bonne personne pour toi désolée";
-				PictureBox->ImageLocation = "violet.png";
+				image_personnage->Image = System::Drawing::Image::FromFile("violet.png");
 
 
 				break;
 			case 1: // entre 20% et 39%
 				this->richTextBox1->Text = "Bon, c'est mieux que 0, mais ne t'attends à rien.";
-				PictureBox->ImageLocation = "orange.png";
+				image_personnage->Image = System::Drawing::Image::FromFile("orange.png");
+
 
 				break;
 			case 2: // entre 40% et 59%
 				this->richTextBox1->Text = "Bah, il y a une chance sur 2 que tu lui plais, c'est déjà bien!";
-				PictureBox->ImageLocation = "vert.png";
+				image_personnage->Image = System::Drawing::Image::FromFile("vert.png");
 
 				break;
 			case 3: // entre 60% et 79%
 				this->richTextBox1->Text = "Vous êtes presque parfaits ensemble!";
-			PictureBox->ImageLocation = "rouge.png";
+				image_personnage->Image = System::Drawing::Image::FromFile("rouge.png");
 
 				break;
 			case 4: // entre 80% et 99%
 			case 5: // 100%
 				this->richTextBox1->Text = "Vous êtes faits l'un pour l'autre!";
-				PictureBox->ImageLocation = "rose.png";
+				image_personnage->Image = System::Drawing::Image::FromFile("rose.png");
 
 				break;
 			default:
