@@ -286,24 +286,24 @@ namespace calculatriceamoureusev2 {
 
 			switch (range) {
 			case 0: // entre 0 et 19%
-				this->richTextBox1->Text = "Ce n'est pas la bonne personne pour toi désolée";
+				this->richTextBox1->Text = "Ce n'est pas la bonne personne pour toi desolee";
 				image_personnage->Image = System::Drawing::Image::FromFile("violet.png");
 
 
 				break;
 			case 1: // entre 20% et 39%
-				this->richTextBox1->Text = "Bon, c'est mieux que 0, mais ne t'attends à rien.";
+				this->richTextBox1->Text = "Bon, c'est mieux que 0, mais ne t'attends a rien.";
 				image_personnage->Image = System::Drawing::Image::FromFile("orange.png");
 
 
 				break;
 			case 2: // entre 40% et 59%
-				this->richTextBox1->Text = "Bah, il y a une chance sur 2 que tu lui plais, c'est déjà bien!";
+				this->richTextBox1->Text = "Bah, il y a une chance sur 2 que tu lui plais, c'est deja bien!";
 				image_personnage->Image = System::Drawing::Image::FromFile("vert.png");
 
 				break;
 			case 3: // entre 60% et 79%
-				this->richTextBox1->Text = "Vous êtes presque parfaits ensemble!";
+				this->richTextBox1->Text = "Vous etes presque parfaits ensemble!";
 				image_personnage->Image = System::Drawing::Image::FromFile("rouge.png");
 
 				break;
