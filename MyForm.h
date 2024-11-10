@@ -10,7 +10,7 @@ namespace calculatriceamoureusev2 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Description résumée de MyForm
+	/// Description rÃ©sumÃ©e de MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -25,7 +25,7 @@ namespace calculatriceamoureusev2 {
 
 	protected:
 		/// <summary>
-		/// Nettoyage des ressources utilisées.
+		/// Nettoyage des ressources utilisÃ©es.
 		/// </summary>
 		~MyForm()
 		{
@@ -46,7 +46,7 @@ namespace calculatriceamoureusev2 {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::TextBox^ textBox2;
 
-	private: System::Windows::Forms::ProgressBar^ curseur_de_comptabilité;
+	private: System::Windows::Forms::ProgressBar^ curseur_de_comptabilitÃ©;
 
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Timer^ timer1;
@@ -60,15 +60,15 @@ namespace calculatriceamoureusev2 {
 
 	private:
 		/// <summary>
-		/// Variable nécessaire au concepteur.
+		/// Variable nÃ©cessaire au concepteur.
 		/// </summary>
 		int targetValue = 0;
 		int CalculerScorePrenom(String^ prenom);
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
-		/// le contenu de cette méthode avec l'éditeur de code.
+		/// MÃ©thode requise pour la prise en charge du concepteur - ne modifiez pas
+		/// le contenu de cette mÃ©thode avec l'Ã©diteur de code.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -82,7 +82,7 @@ namespace calculatriceamoureusev2 {
 			this->calcam = (gcnew System::Windows::Forms::Label());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->curseur_de_comptabilité = (gcnew System::Windows::Forms::ProgressBar());
+			this->curseur_de_comptabilitÃ© = (gcnew System::Windows::Forms::ProgressBar());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
@@ -113,7 +113,7 @@ namespace calculatriceamoureusev2 {
 			this->sonPrenom->Name = L"sonPrenom";
 			this->sonPrenom->Size = System::Drawing::Size(118, 16);
 			this->sonPrenom->TabIndex = 10;
-			this->sonPrenom->Text = L"Entrez son prénom";
+			this->sonPrenom->Text = L"Entrez son prÃ©nom";
 			// 
 			// tonPrenom
 			// 
@@ -123,7 +123,7 @@ namespace calculatriceamoureusev2 {
 			this->tonPrenom->Name = L"tonPrenom";
 			this->tonPrenom->Size = System::Drawing::Size(126, 16);
 			this->tonPrenom->TabIndex = 9;
-			this->tonPrenom->Text = L"Entrez votre prénom";
+			this->tonPrenom->Text = L"Entrez votre prÃ©nom";
 			// 
 			// coeur2
 			// 
@@ -173,15 +173,15 @@ namespace calculatriceamoureusev2 {
 			this->textBox2->Size = System::Drawing::Size(100, 22);
 			this->textBox2->TabIndex = 13;
 			// 
-			// curseur_de_comptabilité
+			// curseur_de_comptabilitÃ©
 			// 
-			this->curseur_de_comptabilité->BackColor = System::Drawing::Color::Firebrick;
-			this->curseur_de_comptabilité->Location = System::Drawing::Point(364, 270);
-			this->curseur_de_comptabilité->Name = L"curseur_de_comptabilité";
-			this->curseur_de_comptabilité->Size = System::Drawing::Size(194, 23);
-			this->curseur_de_comptabilité->Style = System::Windows::Forms::ProgressBarStyle::Continuous;
-			this->curseur_de_comptabilité->TabIndex = 15;
-			this->curseur_de_comptabilité->Click += gcnew System::EventHandler(this, &MyForm::curseur_de_comptabilité_Click);
+			this->curseur_de_comptabilitÃ©->BackColor = System::Drawing::Color::Firebrick;
+			this->curseur_de_comptabilitÃ©->Location = System::Drawing::Point(364, 270);
+			this->curseur_de_comptabilitÃ©->Name = L"curseur_de_comptabilitÃ©";
+			this->curseur_de_comptabilitÃ©->Size = System::Drawing::Size(194, 23);
+			this->curseur_de_comptabilitÃ©->Style = System::Windows::Forms::ProgressBarStyle::Continuous;
+			this->curseur_de_comptabilitÃ©->TabIndex = 15;
+			this->curseur_de_comptabilitÃ©->Click += gcnew System::EventHandler(this, &MyForm::curseur_de_comptabilitÃ©_Click);
 			// 
 			// label1
 			// 
@@ -224,7 +224,7 @@ namespace calculatriceamoureusev2 {
 			this->Controls->Add(this->image_personnage);
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->curseur_de_comptabilité);
+			this->Controls->Add(this->curseur_de_comptabilitÃ©);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->calccompt);
@@ -245,68 +245,68 @@ namespace calculatriceamoureusev2 {
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		// Récupérer les prénoms des zones de texte
+		// RÃ©cupÃ©rer les prÃ©noms des zones de texte
 		String^ prenom1 = textBox1->Text;
 		String^ prenom2 = textBox2->Text;
-		//Récupérer les scores
+		//RÃ©cupÃ©rer les scores
 		int scorePrenom1 = CalculerScorePrenom(prenom1);
         int scorePrenom2= CalculerScorePrenom(prenom2);
 
 
 
-		// Calcul de la compatibilité 
+		// Calcul de la compatibilitÃ© 
 		targetValue = (scorePrenom1 + scorePrenom2) % 100;
 
-		// remet à 0 la barre de progression et du texte d'affichage
-		curseur_de_comptabilité->Value = 0;
+		// remet Ã  0 la barre de progression et du texte d'affichage
+		curseur_de_comptabilitÃ©->Value = 0;
 		richTextBox1->Text = ""; // Effacer l'ancien message
 
-		// Démarrage du timer
+		// DÃ©marrage du timer
 		timer1->Start();
 
 	}
-	private: System::Void curseur_de_comptabilité_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void curseur_de_comptabilitÃ©_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
 	private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
-		if (curseur_de_comptabilité->Value < targetValue)
+		if (curseur_de_comptabilitÃ©->Value < targetValue)
 		{
-			curseur_de_comptabilité->Value += 1;
-			label1->Text = "Compatibilité : " + curseur_de_comptabilité->Value.ToString() + "%";
+			curseur_de_comptabilitÃ©->Value += 1;
+			label1->Text = "CompatibilitÃ© : " + curseur_de_comptabilitÃ©->Value.ToString() + "%";
 		}
 		else
 		{
-			timer1->Stop(); // Arrêter l'animation quand la valeur cible est atteinte
+			timer1->Stop(); // ArrÃªter l'animation quand la valeur cible est atteinte
 
-			// Calculer l'intervalle basé sur targetValue
+			// Calculer l'intervalle basÃ© sur targetValue
 			int range = targetValue / 20;
 
 			switch (range) {
 			case 0: // entre 0 et 19%
-				this->richTextBox1->Text = "Ce n'est pas la bonne personne pour toi désolée";
-				image_personnage->Image = System::Drawing::Image::FromFile("x64\\Debug\\images\\violet.png");
+				this->richTextBox1->Text = "Ce n'est pas la bonne personne pour toi dÃ©solÃ©e";
+				image_personnage->Image = System::Drawing::Image::FromFile("images\\violet.png");
 
 				break;
 			case 1: // entre 20% et 39%
-				this->richTextBox1->Text = "Bon, c'est mieux que 0, mais ne t'attends à rien.";
-				image_personnage->Image = System::Drawing::Image::FromFile("x64\\Debug\\images\\orange.png");
+				this->richTextBox1->Text = "Bon, c'est mieux que 0, mais ne t'attends Ã  rien.";
+				image_personnage->Image = System::Drawing::Image::FromFile("images\\orange.png");
 				break;
 			case 2: // entre 40% et 59%
-				this->richTextBox1->Text = "Bah, il y a une chance sur 2 que tu lui plais, c'est déjà bien!";
-				image_personnage->Image = System::Drawing::Image::FromFile("x64\\Debug\\images\\vert.png");
+				this->richTextBox1->Text = "Bah, il y a une chance sur 2 que tu lui plais, c'est dÃ©jÃ  bien!";
+				image_personnage->Image = System::Drawing::Image::FromFile("images\\vert.png");
 				break;
 			case 3: // entre 60% et 79%
-				this->richTextBox1->Text = "Vous êtes presque parfaits ensemble!";
-				image_personnage->Image = System::Drawing::Image::FromFile("x64\\Debug\\images\\rouge.png");
+				this->richTextBox1->Text = "Vous Ãªtes presque parfaits ensemble!";
+				image_personnage->Image = System::Drawing::Image::FromFile("images\\rouge.png");
 
 				break;
 			case 4: // entre 80% et 99%
 			case 5: // 100%
-				this->richTextBox1->Text = "Vous êtes faits l'un pour l'autre!";
-				image_personnage->Image = System::Drawing::Image::FromFile("x64\\Debug\\images\\rose.png");
+				this->richTextBox1->Text = "Vous Ãªtes faits l'un pour l'autre!";
+				image_personnage->Image = System::Drawing::Image::FromFile("\\images\\rose.png");
 				break;
 			default:
 				this->richTextBox1->Text = "Erreur dans le calcul.";
